@@ -14,14 +14,14 @@ for(int j=0;j<num;j++)
 {
 if(arr[i]>arr[j])
 {
-temp=a[i];
-a[i]=a[j];
-temp=a[j];
+temp=arr[i];
+arr[i]=arr[j];
+temp=arr[j];
 }
 }
 }
 for(int i=0;i<num;i++)
 {
-printf("%d",a[i]);
+printf("%d",arr[i]);
 }
 }
