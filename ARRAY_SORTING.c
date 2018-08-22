@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-int num,arr[num],temp=0;
+int num,arr[num],temp;
 scanf("%d",&num);
 for(int i=0;i<num;i++)
 {
@@ -12,7 +12,7 @@ for(int i=0;i,numi++)
 {
 for(int j=0;j<num;j++)
 {
-if(arr[i]>arr[j])
+if(arr[i]<arr[j])
 {
 temp=arr[i];
 arr[i]=arr[j];
