@@ -5,22 +5,33 @@
 void main()
 {
 char str[100];
-int cnt=0;
+int cnt1=0,cnt2=0;
 scanf("%s",str);
 for(int i=0;str[i]!='\0';i++)
 {
 if(isdigit(str[i]))
 {
-cnt++;
+cnt1++;
 break;
 }
 }
-if(cnt!=0)
+if(cnt1!=0)
 {
 printf("yes");
 }
 else
 {
-printf("no");
+for(int i=0;str[i]!='\0';i++)
+{
+if(isalpha(str[i]))
+{
+cnt2++;
+break;
+}
+}
+if(cnt2<cnt1)
+{
+    printf("no");
+}
 }
 }
