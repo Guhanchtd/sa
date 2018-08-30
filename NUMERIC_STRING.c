@@ -7,7 +7,7 @@ void main()
 char str[100];
 int cnt=0;
 scanf("%s",str);
-for(int i=0;s[i]!='\0';i++)
+for(int i=0;str[i]!='\0';i++)
 {
 if(isdigit(str[i]))
 {
